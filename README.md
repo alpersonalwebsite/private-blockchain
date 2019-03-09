@@ -1,5 +1,7 @@
 # Project 3: RESTful Web API with Node.js Framework
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/alpersonalwebsite/private-blockchain.svg)](https://greenkeeper.io/)
+
 ### Prerequisites
 
 You need to have [Node.js](https://nodejs.org/en/download/) installed.
