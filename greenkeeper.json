@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "bc/package.json",
+        "package.json",
+        "server/package.json",
+        "star/package.json"
+      ]
+    }
+  }
+}
