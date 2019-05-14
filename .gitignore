@@ -15,6 +15,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# DBs data
+star_chaindata
+chaindata
+
 # Runtime data
 pids
 *.pid
