@@ -1,6 +1,7 @@
 # Project 3: RESTful Web API with Node.js Framework
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/alpersonalwebsite/private-blockchain.svg)](https://greenkeeper.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 ### Prerequisites
 
