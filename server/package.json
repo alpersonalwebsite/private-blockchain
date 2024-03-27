@@ -11,6 +11,6 @@
   "dependencies": {
     "bitcoinjs-message": "^2.0.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "express": "^4.19.2"
   }
 }
