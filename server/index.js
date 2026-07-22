@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const helmet = require('helmet');
 
 class BlockAPI {
   constructor() {
@@ -16,6 +17,7 @@ class BlockAPI {
   }
 
   initExpressMiddleWare() {
+    this.app.use(helmet());
     this.app.use(bodyParser.urlencoded({
       extended: true
     }));
