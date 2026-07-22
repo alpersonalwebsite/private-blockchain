@@ -93,7 +93,7 @@ function checkRequestStatusInlevelDB() {
         i++;
       })
       .on('error', error => {
-        reject(err);
+        reject(error);
       })
       .on('close', () => {
         resolve(i);

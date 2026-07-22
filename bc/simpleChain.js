@@ -181,7 +181,7 @@ function getBlockHeightlevelDB() {
         i++;
       })
       .on('error', error => {
-        reject(err);
+        reject(error);
       })
       .on('close', () => {
         resolve(i);
@@ -235,7 +235,7 @@ function getBlocksByValueAttributelevelD(attribute) {
         }
       })
       .on('error', error => {
-        reject(err);
+        reject(error);
       })
       .on('close', () => {
         addressesArr.length > 1
