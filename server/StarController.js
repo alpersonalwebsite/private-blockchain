@@ -127,7 +127,7 @@ class StarController {
               } else {
                 // We dont want to store the decoded story
                 //starBody.star.storyDecoded = '';
-                starBody.star.story = Buffer(starBody.star.story).toString(
+                starBody.star.story = Buffer.from(starBody.star.story).toString(
                   'hex'
                 );
               }
