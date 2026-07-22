@@ -213,7 +213,7 @@ function getBlockDatalevelDB(key) {
   return new Promise((resolve, reject) => {
     db.get(key, (err, value) => {
       if (err) {
-        reject(err);
+        return reject(err);
       }
 
       resolve(value);

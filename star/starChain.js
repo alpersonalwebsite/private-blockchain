@@ -68,7 +68,7 @@ function checkRequestInlevelDB(address) {
   return new Promise((resolve, reject) => {
     db.get(address, (err, value) => {
       if (err) {
-        reject(err);
+        return reject(err);
       }
       resolve(value);
     });
