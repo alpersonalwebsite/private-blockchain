@@ -16,9 +16,14 @@ const _ = require('lodash');
 const hex2ascii = require('hex2ascii');
 const bitcoinMessage = require('bitcoinjs-message');
 
-// Clean expired request on init and every 5 minutes
-starchain.checkRequestStatus();
-setInterval(() => starchain.checkRequestStatus(), 300000);
+// Clean expired requests on init and every 5 minutes. These run in the
+// background, so log+swallow rejections to avoid unhandled promise rejections.
+const runCleanup = () =>
+  starchain
+    .checkRequestStatus()
+    .catch(err => console.error('Request cleanup failed:', err));
+runCleanup();
+setInterval(runCleanup, 300000);
 
 class StarController {
   constructor(app) {
