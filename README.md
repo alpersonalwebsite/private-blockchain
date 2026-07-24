@@ -48,6 +48,11 @@ It will also execute the necessary scripts and serve on http://localhost:8000
 
 **Please, be patient.** The processes could take some time.
 
+> Note: the sub-packages depend on modules declared in the **root**
+> `package.json` (resolved via the ancestor `node_modules`), so a root install is
+> required. `npm start` handles all four installs; if you run a package directly
+> (e.g. `node server/index.js`), install the root dependencies first.
+
 This project uses Express: https://expressjs.com/
 
 ---
