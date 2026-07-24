@@ -1,13 +1,13 @@
 {
-  "name": "project-3",
+  "name": "private-blockchain",
   "version": "1.0.0",
-  "description": "",
+  "description": "Private blockchain star registry (Node, Express, LevelDB)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "yarn install && cd ./bc && yarn install && cd .. && cd ./server && yarn install && cd .. && cd ./star && yarn install && cd .. && npm-run-all start:*",
     "start:blockchain": "node ./bc/simpleChain.js",
-    "start:server": "nodemon ./server index.js --watch star --watch server/StarController.js"
+    "start:server": "nodemon ./server/index.js --watch star --watch server/StarController.js"
   },
   "author": "",
   "license": "ISC",
