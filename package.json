@@ -1,7 +1,7 @@
 {
-  "name": "project-3",
+  "name": "private-blockchain",
   "version": "1.0.0",
-  "description": "",
+  "description": "Private blockchain star registry (Node, Express, LevelDB)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
